@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Zoha\Meta\Helpers;
+namespace Imenso\Meta\Helpers;
 
-use Zoha\Meta\Contracts\MetaCreator;
+use Imenso\Meta\Contracts\MetaCreator;
 
 class CreateMetaHelper extends SetMetaHelper implements MetaCreator
 {

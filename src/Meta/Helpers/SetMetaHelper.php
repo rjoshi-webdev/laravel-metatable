@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Zoha\Meta\Helpers;
+namespace Imenso\Meta\Helpers;
 
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 
 abstract class SetMetaHelper
 {
@@ -165,7 +165,7 @@ abstract class SetMetaHelper
         $types
     ) {
         if (!is_array($key)) {
-            $newMeta = new \Zoha\Meta\Models\Meta;
+            $newMeta = new \Imenso\Meta\Models\Meta;
             $newMeta->setTable($instance->getMetaTable());
             $newMeta->status = true;
             $newMeta->type = $type;
@@ -177,7 +177,7 @@ abstract class SetMetaHelper
         } else {
             $currentMetaItem = [];
             foreach ($key as $keyItem => $keyItemValue) {
-                $currentMetaItemTemporary = new \Zoha\Meta\Models\Meta();
+                $currentMetaItemTemporary = new \Imenso\Meta\Models\Meta();
                 $currentMetaItemTemporary->setTable($instance->getMetaTable());
                 $currentMetaItemTemporary->status = true;
                 $currentMetaItemTemporary->type = $types[$keyItem];

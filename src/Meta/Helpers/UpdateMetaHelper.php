@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zoha\Meta\Helpers;
+namespace Imenso\Meta\Helpers;
 
-use Zoha\Meta\Contracts\MetaUpdator;
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Contracts\MetaUpdator;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 
 class UpdateMetaHelper extends SetMetaHelper implements MetaUpdator
 {

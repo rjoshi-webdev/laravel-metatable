@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta\Traits;
+namespace Imenso\Meta\Traits;
 
-use Zoha\Meta\Helpers\CreateMetaHelper;
-use Zoha\Meta\Helpers\MetaHelper as Meta;
-use Zoha\Meta\Helpers\UpdateMetaHelper;
+use Imenso\Meta\Helpers\CreateMetaHelper;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\UpdateMetaHelper;
 
 trait SetMeta
 {

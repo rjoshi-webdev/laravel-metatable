@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha\Meta\Facades;
+namespace Imenso\Meta\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

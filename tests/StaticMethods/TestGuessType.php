@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta\Tests\StaticMethods;
+namespace Imenso\Meta\Tests\StaticMethods;
 
 
-use Zoha\Meta\Helpers\MetaHelper as Meta;
-use Zoha\Meta\Tests\TestingHelpers;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Tests\TestingHelpers;
 
 class TestGuessType extends TestingHelpers
 {

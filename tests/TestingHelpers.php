@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zoha\Meta\Tests;
+namespace Imenso\Meta\Tests;
 
-use Zoha\Meta\Models\Meta;
-use Zoha\Meta\Models\ExampleModel;
+use Imenso\Meta\Models\Meta;
+use Imenso\Meta\Models\ExampleModel;
 
 class TestingHelpers extends TestCase
 {
@@ -14,8 +14,8 @@ class TestingHelpers extends TestCase
     protected $model;
 
     protected $tablesModels = [
-        'model' => \Zoha\Meta\Models\ExampleModel::class,
-        'meta'  => \Zoha\Meta\Models\Meta::class,
+        'model' => \Imenso\Meta\Models\ExampleModel::class,
+        'meta'  => \Imenso\Meta\Models\Meta::class,
     ];
 
     private $fakeDataMeta = [
@@ -23,213 +23,213 @@ class TestingHelpers extends TestCase
             [
                 'key'        => 'key1',
                 'value'      => 1,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 1,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key2',
                 'value'      => 1,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 1,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key3',
                 'value'      => 'test',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING,
                 'owner_id'   => 1,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key4',
                 'value'      => true,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
                 'owner_id'   => 1,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key5',
                 'value'      => '["test1","test2"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_COLLECTION,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_COLLECTION,
                 'owner_id'   => 1,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ]
         ],
         [
             [
                 'key'        => 'key1',
                 'value'      => 2,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 2,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key2',
                 'value'      => 1,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 2,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key3',
                 'value'      => 'test',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING,
                 'owner_id'   => 2,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key4',
                 'value'      => true,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
                 'owner_id'   => 2,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key5',
                 'value'      => '["test1","test2"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
                 'owner_id'   => 2,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
         ],
         [
             [
                 'key'        => 'key1',
                 'value'      => 2,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 3,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key2',
                 'value'      => 2,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 3,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key3',
                 'value'      => 'test2',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING,
                 'owner_id'   => 3,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key4',
                 'value'      => false,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
                 'owner_id'   => 3,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key5',
                 'value'      => '["test3","test4"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_JSON,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_JSON,
                 'owner_id'   => 3,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
         ],
         [
             [
                 'key'        => 'key1',
                 'value'      => 3,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 4,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key2',
                 'value'      => 4,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 4,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key3',
                 'value'      => null,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING,
                 'owner_id'   => 4,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key4',
                 'value'      => null,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
                 'owner_id'   => 4,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key5',
                 'value'      => '["test5","test6"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
                 'owner_id'   => 4,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
         ],
         [
             [
                 'key'        => 'key1',
                 'value'      => 1,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key2',
                 'value'      => 2,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_INTEGER,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key3',
                 'value'      => 'test',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key4',
                 'value'      => true,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_BOOLEAN,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key5',
                 'value'      => '["test1","test2"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_COLLECTION,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_COLLECTION,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key6',
                 'value'      => null,
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_NULL,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_NULL,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key7',
                 'value'      => '["test1","test2"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_JSON,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_JSON,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key8',
                 'value'      => '["test1","test2"]',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
             [
                 'key'        => 'key9',
                 'value'      => '{"test100":"test2","test2323":"test4"}',
-                'type'       => \Zoha\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
+                'type'       => \Imenso\Meta\Helpers\MetaHelper::META_TYPE_ARRAY,
                 'owner_id'   => 5,
-                'owner_type' => 'Zoha\Meta\Models\ExampleModel'
+                'owner_type' => 'Imenso\Meta\Models\ExampleModel'
             ],
         ],
     ];
@@ -320,7 +320,7 @@ class TestingHelpers extends TestCase
         $meta,
         $key = 'test',
         $value = 'testvalue',
-        $type = \Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING
+        $type = \Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING
     ) {
         $this->assertEquals($key, $meta->key);
         $this->assertEquals($value, $meta->value);

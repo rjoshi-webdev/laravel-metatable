@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha\Meta\Helpers;
+namespace Imenso\Meta\Helpers;
 
 use Illuminate\Database\Eloquent\Collection;
 

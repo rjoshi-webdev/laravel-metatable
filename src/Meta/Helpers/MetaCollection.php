@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zoha\Meta\Helpers;
+namespace Imenso\Meta\Helpers;
 
 
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 use Illuminate\Database\Eloquent\Collection;
 
 class MetaCollection extends Collection
@@ -115,7 +115,7 @@ class MetaCollection extends Collection
      */
     protected function createTemporaryMeta($property, $value, $inTemporaryItems): void
     {
-        $meta = new \Zoha\Meta\Models\Meta();
+        $meta = new \Imenso\Meta\Models\Meta();
         $meta->key = $property;
         $meta->value = $value;
         $meta->changed = true;

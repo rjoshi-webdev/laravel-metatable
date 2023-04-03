@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha\Meta\Contracts;
+namespace Imenso\Meta\Contracts;
 
 
 interface MetaUpdator

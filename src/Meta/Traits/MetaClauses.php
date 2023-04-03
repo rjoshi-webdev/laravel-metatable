@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zoha\Meta\Traits;
+namespace Imenso\Meta\Traits;
 
 use Illuminate\Database\Query\Builder;
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 
 trait MetaClauses
 {

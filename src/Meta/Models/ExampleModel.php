@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta\Models;
+namespace Imenso\Meta\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Zoha\Meta\Database\Factories\ExampleModelFactory;
-use Zoha\Metable;
+use Imenso\Meta\Database\Factories\ExampleModelFactory;
+use Imenso\Metable;
 
 class ExampleModel extends Model
 {

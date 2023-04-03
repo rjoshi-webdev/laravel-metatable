@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 
 class CreateMetaTable extends Migration
 {

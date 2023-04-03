@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta\Models;
+namespace Imenso\Meta\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
-use Zoha\Metable;
+use Imenso\Metable;
 
 class CustomMetaTableModel extends Model
 {

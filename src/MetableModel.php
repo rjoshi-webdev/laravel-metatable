@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha;
+namespace Imenso;
 
 use Illuminate\Database\Eloquent\Model;
 

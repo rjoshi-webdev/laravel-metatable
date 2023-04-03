@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Zoha\Meta\Tests\Clauses;
+namespace Imenso\Meta\Tests\Clauses;
 
 
-use Zoha\Meta\Models\ExampleModel;
-use Zoha\Meta\Tests\TestingHelpers;
-use Zoha\Meta\Helpers\MetaHelper as MetaFacade;
+use Imenso\Meta\Models\ExampleModel;
+use Imenso\Meta\Tests\TestingHelpers;
+use Imenso\Meta\Helpers\MetaHelper as MetaFacade;
 
 class TestWhereMetaHasMethod extends TestingHelpers
 {
