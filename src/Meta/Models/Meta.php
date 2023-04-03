@@ -1,9 +1,9 @@
 <?php
 
-namespace Zoha\Meta\Models;
+namespace Imenso\Meta\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Zoha\Meta\Database\Factories\MetaFactory;
+use Imenso\Meta\Database\Factories\MetaFactory;
 
 class Meta extends Model
 {

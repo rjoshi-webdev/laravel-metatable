@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta;
+namespace Imenso\Meta;
 
 
 use Illuminate\Support\ServiceProvider;
-use Zoha\Meta\Commands\CreateMetaModelCommand;
+use Imenso\Meta\Commands\CreateMetaModelCommand;
 
 class MetaServiceProvider extends ServiceProvider
 {

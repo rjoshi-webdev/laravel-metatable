@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Zoha\Meta\Traits;
+namespace Imenso\Meta\Traits;
 
 
-use Zoha\Meta\Helpers\MetaHelper as Meta;
-use Zoha\Meta\Helpers\MetaCollection;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaCollection;
 use Illuminate\Database\Eloquent\Collection;
-use Zoha\Meta\Models\NewClassForTest;
+use Imenso\Meta\Models\NewClassForTest;
 
 trait MetableBase
 {
@@ -29,7 +29,7 @@ trait MetableBase
     {
         static::deleted(function ($modelItem) {
             if (! method_exists($modelItem, 'bootSoftDeletes') || (method_exists($modelItem, 'bootSoftDeletes') && $modelItem->isForceDeleting())) {
-                \Zoha\Meta\Models\Meta::where('owner_type', static::class)->where('owner_id', $modelItem->id)->delete();
+                \Imenso\Meta\Models\Meta::where('owner_type', static::class)->where('owner_id', $modelItem->id)->delete();
             }
         });
     }
@@ -53,7 +53,7 @@ trait MetableBase
         if ($key !== null) {
             return $this->processMetaRequest($key, $value, $type);
         }
-        $instance = new \Zoha\Meta\Models\Meta();
+        $instance = new \Imenso\Meta\Models\Meta();
         $instance->setTable($this->getMetaTable());
         list($type, $id) = $this->getMorphs('owner', null, null);
         $table = $instance->getTable();
@@ -67,7 +67,7 @@ trait MetableBase
      */
     public function metarelation()
     {
-        $instance = new \Zoha\Meta\Models\Meta();
+        $instance = new \Imenso\Meta\Models\Meta();
         $instance->setTable($this->getMetaTable());
         list($type, $id) = $this->getMorphs('owner', null, null);
         $table = $instance->getTable();

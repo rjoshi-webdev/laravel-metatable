@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Zoha\Meta\Tests;
+namespace Imenso\Meta\Tests;
 
 
 use Illuminate\Support\Facades\Schema;
-use Zoha\Meta\Models\CustomMetaTableModel;
-use Zoha\Meta\Models\ExampleModel;
-use Zoha\Meta\Models\Meta;
+use Imenso\Meta\Models\CustomMetaTableModel;
+use Imenso\Meta\Models\ExampleModel;
+use Imenso\Meta\Models\Meta;
 
 class TestCustomMetaTable extends TestCase
 {

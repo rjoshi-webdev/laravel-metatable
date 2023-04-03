@@ -1,11 +1,11 @@
 <?php
 
-namespace Zoha\Meta\Database\Factories;
+namespace Imenso\Meta\Database\Factories;
 
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Zoha\Meta\Helpers\MetaHelper;
-use Zoha\Meta\Models\Meta;
+use Imenso\Meta\Helpers\MetaHelper;
+use Imenso\Meta\Models\Meta;
 
 class MetaFactory extends Factory
 {

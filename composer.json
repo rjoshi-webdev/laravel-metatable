@@ -30,21 +30,21 @@
   ],
   "autoload": {
     "psr-4": {
-      "rahul_imenso\\": "src/"
+      "Imenso\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "rahul_imenso\\Meta\\Tests\\": "tests/"
+      "Imenso\\Meta\\Tests\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "rahul_imenso\\Meta\\MetaServiceProvider"
+        "Imenso\\Meta\\MetaServiceProvider"
       ],
       "aliases": {
-        "Meta": "rahul_imenso\\Meta\\Facades\\MetaFacade"
+        "Meta": "Imenso\\Meta\\Facades\\MetaFacade"
       }
     }
   }

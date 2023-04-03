@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha;
+namespace Imenso;
 
 
 class Meta extends MetableModel

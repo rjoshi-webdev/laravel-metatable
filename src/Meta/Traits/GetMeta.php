@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Zoha\Meta\Traits;
+namespace Imenso\Meta\Traits;
 
-use Zoha\Meta\Helpers\MetaHelper as Meta;
+use Imenso\Meta\Helpers\MetaHelper as Meta;
 
 trait GetMeta
 {

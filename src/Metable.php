@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Zoha;
+namespace Imenso;
 
 
-use Zoha\Meta\Traits\DeleteMeta;
-use Zoha\Meta\Traits\GetMeta;
-use Zoha\Meta\Traits\MetableBase;
-use Zoha\Meta\Traits\MetaClauses;
-use Zoha\Meta\Traits\SetMeta;
+use Imenso\Meta\Traits\DeleteMeta;
+use Imenso\Meta\Traits\GetMeta;
+use Imenso\Meta\Traits\MetableBase;
+use Imenso\Meta\Traits\MetaClauses;
+use Imenso\Meta\Traits\SetMeta;
 
 trait Metable
 {

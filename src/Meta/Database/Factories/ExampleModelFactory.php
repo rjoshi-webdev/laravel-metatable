@@ -1,9 +1,9 @@
 <?php
 
-namespace Zoha\Meta\Database\Factories;
+namespace Imenso\Meta\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Zoha\Meta\Models\ExampleModel;
+use Imenso\Meta\Models\ExampleModel;
 
 class ExampleModelFactory extends Factory
 {

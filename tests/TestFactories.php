@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zoha\Meta\Tests;
+namespace Imenso\Meta\Tests;
 
-use Zoha\Meta\Models\Meta;
-use Zoha\Meta\Models\ExampleModel;
+use Imenso\Meta\Models\Meta;
+use Imenso\Meta\Models\ExampleModel;
 
 class TestFactories extends TestingHelpers
 {
@@ -33,7 +33,7 @@ class TestFactories extends TestingHelpers
         $this->assertEquals('example value', $meta->value);
 
         // assert type and status
-        $this->assertEquals(\Zoha\Meta\Helpers\MetaHelper::META_TYPE_STRING, $meta->type);
+        $this->assertEquals(\Imenso\Meta\Helpers\MetaHelper::META_TYPE_STRING, $meta->type);
         $this->assertTrue((bool) $meta->status);
 
         //assert owner type and owner key

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Zoha\Meta\Tests\SetAndGet;
+namespace Imenso\Meta\Tests\SetAndGet;
 
 
-use Zoha\Meta\Models\ExampleModel;
-use Zoha\Meta\Tests\TestingHelpers;
+use Imenso\Meta\Models\ExampleModel;
+use Imenso\Meta\Tests\TestingHelpers;
 
 class TestIncreaseMetaMethod extends TestingHelpers
 {

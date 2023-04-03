@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zoha\Meta\Traits;
+namespace Imenso\Meta\Traits;
 
 use Illuminate\Database\Eloquent\Collection;
 

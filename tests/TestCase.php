@@ -1,6 +1,6 @@
 <?php
 
-namespace Zoha\Meta\Tests;
+namespace Imenso\Meta\Tests;
 
 use Illuminate\Support\Facades\Schema;
 
@@ -16,13 +16,13 @@ class TestCase extends \Orchestra\Testbench\TestCase
      */
     protected function getPackageProviders($app)
     {
-        return ['Zoha\Meta\MetaServiceProvider'];
+        return ['Imenso\Meta\MetaServiceProvider'];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            "Meta" => "Zoha\Meta\Facades\MetaFacade",
+            "Meta" => "Imenso\Meta\Facades\MetaFacade",
         ];
     }
 
