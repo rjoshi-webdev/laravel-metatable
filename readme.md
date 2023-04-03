@@ -69,12 +69,12 @@ If you Use Laravel <= 5.4 add the ServiceProvider and Alias in config/app.php
 ```PHP
 'providers' => [
     ...
-    rahul_imenso\Meta\MetaServiceProvider::class,
+    Imenso\Meta\MetaServiceProvider::class,
     ...
 ]
 'aliases' => [
     ...
-    'Meta' => rahul_imenso\Meta\Facades\MetaFacade::class,
+    'Meta' => Imenso\Meta\Facades\MetaFacade::class,
     ...
 ]
 
@@ -89,7 +89,7 @@ And execute migrate command to migrate meta table
 And then to add meta functionality to each of your models, You just need to extends it from MetableModel instead of the Model.
 
 ```PHP
-use rahul_imenso\MetableModel;
+use Imenso\MetableModel;
 
 class Post extends MetableModel
 {
@@ -100,7 +100,7 @@ class Post extends MetableModel
 Or you can use Metable trait instead :
 
 ```PHP
-use rahul_imenso\Metable;
+use Imenso\Metable;
 
 class Post extends Model
 {
@@ -114,7 +114,7 @@ class Post extends Model
 You can publish meta config file using this command :
 
 ```
- $ php artisan vendor:publish --provider="rahul_imenso\Meta\MetaServiceProvider" --tag=config
+ $ php artisan vendor:publish --provider="Imenso\Meta\MetaServiceProvider" --tag=config
 ```
 
 In this file you can change default meta table ( default: meta )
@@ -514,7 +514,7 @@ To do this you have to take four steps :
 First Step : you should publish package config file using this command :
 
 ```
-$ php artisan vendor:publish --provider="rahul_imenso\Meta\MetaServiceProvider" --tag=config
+$ php artisan vendor:publish --provider="Imenso\Meta\MetaServiceProvider" --tag=config
 ```
 
 This command will place a file named `meta.php` in your config folder
@@ -545,7 +545,7 @@ Final Step : now that the new table is made, you can introduce it to the `User` 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
-    use \rahul_imenso\Metable;
+    use \Imenso\Metable;
 
     protected $metaTable = 'users_meta';
 }
@@ -557,14 +557,14 @@ class User extends Authenticatable
 you are free to use meta model in your project
 
 ```PHP
-use rahul_imenso\Meta\Models\Meta;
+use Imenso\Meta\Models\Meta;
 $count = Meta::count();
 ```
 
 Note : If you change meta values using meta model ( change database directly ) meta valuse that was loaded before will not be updated . If you want to update them you should call `refreshLoadedMeta` metahod :
 
 ```PHP
-use rahul_imenso\Meta\Models\Meta;
+use Imenso\Meta\Models\Meta;
 
 $post->meta->key1; // exmaple : return 'test'
 Meta::truncate();
